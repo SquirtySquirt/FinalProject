@@ -47,33 +47,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ImageButton
-        android:id="@+id/contactButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#00A2E1"
-        android:src="@drawable/baseline_phone_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/serviceButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Service Project"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/contactButton"
-        app:layout_constraintEnd_toStartOf="@+id/attendButton"
-        app:layout_constraintStart_toEndOf="@+id/contactButton" />
-
-    <ImageButton
-        android:id="@+id/attendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#00A2E1"
-        android:src="@drawable/baseline_format_list_bulleted_24"
-        app:layout_constraintBottom_toBottomOf="@+id/serviceButton"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#FEFEFE"
+        android:text="Service Projects"
+        android:textColor="#00A2E1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
