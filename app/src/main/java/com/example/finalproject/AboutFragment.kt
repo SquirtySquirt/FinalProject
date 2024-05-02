@@ -20,22 +20,22 @@ class AboutFragment : Fragment() {
     ): View? {
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
 
-        binding.phoneButton.setOnClickListener{
-            val callIntent: Intent = Uri.parse("tel:5709834589").let { number ->
+        binding.phoneButton.setOnClickListener {
+            val callIntent: Intent = Uri.parse("tel:5551234").let { number ->
                 Intent(Intent.ACTION_DIAL, number)
-
-
             }
+            startActivity(callIntent)
         }
-        binding.mailButton.setOnClickListener{
+        binding.mailButton.setOnClickListener {
             Intent(Intent.ACTION_SEND).apply {
                 // The intent does not have a URI, so declare the "text/plain" MIME type
                 type = "text/plain"
-                putExtra(Intent.EXTRA_EMAIL, arrayOf("bakera@ahsd.org "))
-                putExtra(Intent.EXTRA_SUBJECT, "Email subject")
-                putExtra(Intent.EXTRA_TEXT, "Email message text")
+                putExtra(Intent.EXTRA_EMAIL, arrayOf("bakera@ahsd.org ")) // recipients
+                putExtra(Intent.EXTRA_SUBJECT, "")
+                putExtra(Intent.EXTRA_TEXT, "")
                 putExtra(Intent.EXTRA_STREAM, Uri.parse("content://path/to/email/attachment"))
-
+            }.let { intent ->
+                startActivity(intent)
             }
         }
 
