@@ -27,6 +27,7 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
+        val rootView = binding.root
         val menuHost: MenuHost = requireActivity()
 
         menuHost.addMenuProvider(
@@ -43,8 +44,13 @@ class MainFragment : Fragment() {
                 }
             }, viewLifecycleOwner, Lifecycle.State.RESUMED
         )
+        binding.serviceButton.setOnClickListener{
+            val action =
+                MainFragmentDirections.actionMainFragmentToServiceProjectFragment()
+            rootView.findNavController().navigate(action)
+        }
 
-        return binding.root
+        return rootView
     }
 
 
