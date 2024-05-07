@@ -4,20 +4,28 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
-import com.example.finalproject.databinding.FragmentMainBinding
+import androidx.fragment.app.viewModels
+import com.example.finalproject.databinding.FragmentServiceProjectBinding
 
 
 class ServiceProjectFragment : Fragment() {
-    private var _binding: FragmentMainBinding? = null
+    private var _binding: FragmentServiceProjectBinding? = null
     private val binding get() = _binding!!
-
+    private val viewModel: ProjectViewModel by viewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service_project, container, false)
+        _binding = FragmentServiceProjectBinding.inflate(inflater, container, false)
+
+
+        val rootView = binding.root
+        val mAdapter = ProjectAdapter(viewModel.projects)
+        binding.recyclerView.adapter = mAdapter
+        return rootView
+
     }
 
 

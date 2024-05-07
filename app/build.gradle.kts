@@ -42,6 +42,7 @@ android {
     }
 
     dependencies {
+        implementation ("androidx.recyclerview:recyclerview:1.3.2")
         implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
         implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
         implementation("com.squareup.moshi:moshi-kotlin:1.11.0")
@@ -55,6 +56,6 @@ android {
         androidTestImplementation("androidx.test.ext:junit:1.1.5")
         androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
         implementation("androidx.fragment:fragment-ktx:1.5.5")
-        implementation("androidx.recyclerview:recyclerview:1.3.0")
+
     }
 }
