@@ -13,5 +13,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="interact_club_is_a_service_oriented_club_that_is_focused_on_helping_others_in_the_community_through_service_projects_the_main_responsibility_for_a_member_is_to_create_and_take_part_in_various_different_service_projects_and_volunteer_opportunities">Interact Club is a service oriented club that is focused on helping others in the community through service projects. The main responsibility for a member is to create and take part in various different service projects and volunteer opportunities.</string>
     <string name="not_attending">Not Attending</string>
+    <string name="attending">Attending</string>
 
 </resources>

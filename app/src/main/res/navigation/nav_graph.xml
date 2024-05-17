@@ -18,10 +18,18 @@
         android:id="@+id/serviceProjectFragment"
         android:name="com.example.finalproject.ServiceProjectFragment"
         android:label="fragment_service_project"
-        tools:layout="@layout/fragment_service_project" />
+        tools:layout="@layout/fragment_service_project" >
+        <action
+            android:id="@+id/action_serviceProjectFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.finalproject.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.finalproject.InfoFragment"
+        android:label="InfoFragment" />
 </navigation>

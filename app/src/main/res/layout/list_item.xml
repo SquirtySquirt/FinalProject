@@ -29,9 +29,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:gravity="center"
-        android:textSize="24sp"
+        android:paddingRight="8dp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/attendingText"
         app:layout_constraintStart_toEndOf="@+id/bookImage"
         app:layout_constraintTop_toTopOf="@+id/bookImage"
         tools:text="Service Project" />
@@ -64,10 +66,9 @@
         android:id="@+id/attendingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:text="@string/not_attending"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintStart_toEndOf="@+id/titleText"
+        app:layout_constraintEnd_toStartOf="@+id/statusImage"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <ImageButton
@@ -77,7 +78,6 @@
         android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/attendingText"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/not" />
 

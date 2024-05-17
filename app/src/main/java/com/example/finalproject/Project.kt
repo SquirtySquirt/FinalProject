@@ -1,3 +1,6 @@
 package com.example.finalproject
 
-data class Project(val nameId: Int, val dateId: Int, val infoId: Int, val attending: Boolean)
+data class Project(val name: String, val date: String, val info: String, var attending: Boolean)
+//val attend: String
+//    get() = if(attending)
+
