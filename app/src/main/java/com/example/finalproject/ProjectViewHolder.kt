@@ -10,8 +10,11 @@ import com.example.finalproject.databinding.ListItemBinding
 class ProjectViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentProject: Project
     init {
+
         binding.root.setOnClickListener {
-            binding.root.findNavController().navigate(R.id.action_serviceProjectFragment_to_infoFragment)
+                val index = currentProject.index
+                   val action = ServiceProjectFragmentDirections.actionServiceProjectFragmentToInfoFragment(index)
+            binding.root.findNavController().navigate(action)
 
         }
     }
@@ -19,6 +22,7 @@ class ProjectViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(
         currentProject = project
        binding.titleText.text = currentProject.name
         binding.dateText.text = currentProject.date
+        binding.attendingText.text = currentProject.attend
 
     }
 //    fun setAttendingStatus{}

@@ -31,5 +31,9 @@
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.finalproject.InfoFragment"
-        android:label="InfoFragment" />
+        android:label="InfoFragment" >
+        <argument
+            android:name="indexArgs"
+            app:argType="integer" />
+    </fragment>
 </navigation>
