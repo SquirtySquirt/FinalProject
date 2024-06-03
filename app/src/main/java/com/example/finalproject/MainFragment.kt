@@ -51,7 +51,7 @@ class MainFragment : Fragment() {
         )
         binding.serviceButton.setOnClickListener{
             val action =
-                MainFragmentDirections.actionMainFragmentToServiceProjectFragment()
+                MainFragmentDirections.actionMainFragmentToServiceProjectFragment( false, 0)
             rootView.findNavController().navigate(action)
         }
 

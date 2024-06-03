@@ -17,7 +17,7 @@ class ProjectAdapter (val projects: List<Project>) : RecyclerView.Adapter<Projec
         }
 
         override fun onBindViewHolder(holder: ProjectViewHolder, position: Int) {
-            val book = projects[position]
-            holder.bindProject(book)
+            val project= projects[position]
+            holder.bindProject(project)
         }
     }

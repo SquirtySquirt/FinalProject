@@ -4,4 +4,5 @@ data class Project(val name: String, val date: String, val info: String, var att
 val attend: String
     get() = if(attending) "Attending" else "Not Attending"
 
+
 }

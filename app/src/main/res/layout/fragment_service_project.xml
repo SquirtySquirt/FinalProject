@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/serviceProjectFragment"
+    android:background="#7EC5E1"
+    android:backgroundTint="#7EC4E0"
     tools:context=".ServiceProjectFragment">
 
     <androidx.recyclerview.widget.RecyclerView

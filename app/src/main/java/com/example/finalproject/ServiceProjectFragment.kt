@@ -20,10 +20,12 @@ class ServiceProjectFragment : Fragment() {
     ): View? {
         _binding = FragmentServiceProjectBinding.inflate(inflater, container, false)
 
-
+        val args = InfoFragmentArgs.fromBundle(requireArguments())
+        viewModel.projects[args.indexArgs].attending= args.attendArgs
         val rootView = binding.root
         val mAdapter = ProjectAdapter(viewModel.projects)
         binding.recyclerView.adapter = mAdapter
+
         return rootView
 
     }

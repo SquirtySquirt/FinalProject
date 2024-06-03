@@ -5,8 +5,8 @@
     android:id="@+id/main_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00A4E3"
-    android:backgroundTint="#00A3E2"
+    android:background="#7EC5E1"
+    android:backgroundTint="#7EC4E0"
     tools:context=".MainFragment">
 
 
@@ -29,8 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Abington Heights"
-        android:textColor="#FFFFFF"
+        android:textColor="#424040"
         android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,8 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Interact Club"
-        android:textColor="#FFFFFF"
+        android:textColor="#424040"
         android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -52,9 +54,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
-        android:backgroundTint="#FEFEFE"
+        android:backgroundTint="#424040"
         android:text="Service Projects"
-        android:textColor="#00A2E1"
+        android:textColor="#7EC3DF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
